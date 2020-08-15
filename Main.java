@@ -11,11 +11,11 @@ class Main{
 			Scanner pin = new Scanner(System.in);
 			System.out.print("Please insert your pincode: ");
 			pinCode = pin.nextInt();
-			System.out.println(System.lineSeparator().repeat(200));
+			System.out.println(System.lineSeparator().repeat(150));
 			tries++;
 			System.out.println(tries);
 			if(pinCode == 0001){
-				System.out.println(System.lineSeparator().repeat(200));
+				System.out.println(System.lineSeparator().repeat(150));
 				System.out.println("Succes!");
 				try{
 					Thread.sleep(2000);
@@ -23,7 +23,7 @@ class Main{
 				catch(InterruptedException e){
 
 				}
-				System.out.println(System.lineSeparator().repeat(200));
+				System.out.println(System.lineSeparator().repeat(150));
 				System.out.println("Succes!");
 				break;
 			}
@@ -31,6 +31,7 @@ class Main{
 
 	}
 	public static void main(String[] args) throws IOException{
+		System.out.println(System.lineSeparator().repeat(150));
 		askPin();
 	}
 }
